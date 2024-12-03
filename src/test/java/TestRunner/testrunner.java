@@ -10,7 +10,9 @@ import io.cucumber.junit.Cucumber;
 	@CucumberOptions(features="C:\\Users\\Sk_sathish\\eclipse-workspace\\nationalinsurance\\src\\test\\resources\\Aboutus.feature" ,
 	           tags="@Tags",
 	           glue="StepDefinition",
-	           dryRun=false
+	           dryRun=false,
+	           plugin = {"html:target/html","json:target/report.json"}
+	          
 			)
 public class testrunner {
 
